@@ -6,12 +6,10 @@ on:
       - main
 
 jobs:
-  train-model:
-
+  train:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -22,9 +20,9 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install mlflow==2.19.0 pandas scikit-learn numpy
+          pip install mlflow==2.19.0
+          pip install pandas scikit-learn numpy
 
-      - name: Run Training
+      - name: Run MLflow Project
         run: |
-          cd MLProject
-          python modelling.py
+          mlflow run ./MLProject

@@ -1,4 +1,6 @@
-name: smsml-project
+name: TitanicMLProject
+
+conda_env: conda.yaml
 
 entry_points:
   main:

@@ -44,5 +44,5 @@ with mlflow.start_run():
 
     print("Accuracy:", acc)
 
-    print("\\nClassification Report:\\n")
+    print("\nClassification Report:\n")
     print(classification_report(y_test, y_pred))

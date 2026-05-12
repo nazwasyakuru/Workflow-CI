@@ -1,4 +1,4 @@
-name: smsml-env
+name: mlflow-env
 
 channels:
   - defaults
