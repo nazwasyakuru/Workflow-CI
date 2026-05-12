@@ -1,7 +1,7 @@
 python: "3.10"
 
 build_dependencies:
-  - pip
+  pip: latest
 
 dependencies:
   - mlflow==2.19.0
